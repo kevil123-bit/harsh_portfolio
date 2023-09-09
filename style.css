@@ -1,0 +1,325 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+
+h1 {
+  margin: 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #c3c1c1;
+  text-decoration: none;
+}
+
+section {
+  padding: 40px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slider-frame {
+  overflow: hidden;
+  height: 520px;
+  width: 740px;
+  margin-left: -440px;
+  margin-top: 0px;
+  padding-left: 80px;
+  float: left;
+  margin-right: 30px;
+}
+@keyframes slide_animation {
+  0% {
+      left: 0px;
+  }
+  10% {
+      left: 0px;
+  }
+  20% {
+      left: 1200px;
+  }
+  30% {
+      left: 1200px;
+  }
+  40% {
+      left: 2400px;
+  }
+  50% {
+      left: 2400px;
+  }
+  60% {
+      left: 1200px;
+  }
+  70% {
+      left: 1200px;
+  }
+  80% {
+      left: 1200px;
+  }
+  90% {
+      left: 0px;
+  }
+  100% {
+      left: 0px;
+  }
+}
+
+@-webkit-keyframes slide_animation {
+  0% {
+      left: 0px;
+  }
+  10% {
+      left: 1200px;
+  }
+  20% {
+      left: 1200px;
+  }
+  30% {
+      left: 1200px;
+  }
+  40% {
+      left: 2400px;
+  }
+  50% {
+      left: 2400px;
+  }
+  60% {
+      left: 2400px;
+  }
+  70% {
+      left: 1200px;
+  }
+  80% {
+      left: 1200px;
+  }
+  90% {
+      left: 1200px;
+  }
+  100% {
+      left: 0px;
+  }
+}
+
+.slide-images {
+  width: 3600px;
+  height: 800px;
+  margin: 0 0 0 -2400px;
+  position: relative;
+  -webkit-animation-name: slide_animation;
+  animation-name: slide_animation;
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+.img-container {
+  height: 800px;
+  width: 1200px;
+  position: relative;
+  float: left;
+}
+
+.img-container img {
+  width:22%;
+  position: relative;
+  left: 30%;
+  box-shadow: 3px 5px 10px 1px rgb(157, 155, 155);
+}
+.animate__slideInLeft {
+  animation: slideInLeft 1s forwards;
+}
+
+.animate__slideInRight {
+  animation: slideInRight 1s forwards;
+}
+
+.animate__slideInUp {
+  animation: slideInUp 1s forwards;
+}
+
+#projects{
+  margin-top: 10%;
+}
+
+#projectblock{
+  background-color: #333;
+  border-radius: 10px;
+  
+}
+#resumebtn{
+  background-color: rgb(0, 140, 255);
+  border: 0px;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+/* Your existing CSS styles */
+
+.social-icons {
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #424242;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+#open-popup1{
+  cursor: pointer;
+  text-shadow: 1px 1px 3px white;
+}
+#open-popup2{
+  cursor: pointer;
+  text-shadow: 1px 1px 3px white;
+}
+#open-popup3{
+  cursor: pointer;
+  text-shadow: 1px 1px 3px white;
+}
+.popup-container {
+  position: relative;
+}
+
+.popup-overlay {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.popup-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  width: 100%;
+  height: 350px;
+  max-width: 1000px;
+  border-radius: 5px;
+  display: none;
+  color: #333;
+  overflow-y:scroll;
+  text-align: justify;
+  scroll-behavior: smooth;
+  border: 2px solid gray;
+}
+
+.popup-content h2 {
+  margin-top: 0;
+}
+
+.popup-content p {
+  margin-bottom: 20px;
+}
+
+.popup-content button {
+  background-color: #4caf50;
+  color: #434343;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background-color: #45a049;
+}
